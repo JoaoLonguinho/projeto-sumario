@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+@keyframes resultAnimation {
+    0% {
+        background-size: 100% 0%;
+    }
+    100% {
+        background-size: 100% 100%;
+    }
+}
+
+.hanken-grotesk {
+    font-family: "Hanken Grotesk", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+}
+main{
+    font-family: "Hanken Grotesk", serif;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    align-items: center;
+}
+.highlight-result-container{
+    background: linear-gradient(180deg, hsl(252, 100%, 67%) 0%, hsl(234, 85%, 45%) 100%);
+    border-radius: 0px 0px 30px 30px;
+    color: white;
+    text-align: center;
+    padding: 24px;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+h1{
+    opacity: 0.6;
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+.highlight-result-container div div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 130px;
+    min-height: 130px;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 30px;
+    background: linear-gradient(180deg, hsla(256, 72%, 46%, 1) 0%, hsla(241, 72%, 46%, 0) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0%;
+    animation: resultAnimation 0.8s ease-in-out forwards;
+}
+.highlight-result-container div h2{
+    font-size: 50px;
+}
+.highlight-result-container div h3{
+    font-size: 14px;
+    opacity: 0.6;
+}
+.highlight-result-container h4{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.highlight-result-container p{
+    width: 60%;
+    margin: auto;
+    opacity: 0.6;
+}
+.summary{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+}
+.summary h2{
+    color: hsl(224, 30%, 27%);
+}
+.summary .item{
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+.summary h5{
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    gap: 10px;
+}
+.ione{
+    background-color: #fff6f7;
+    color: hsl(0, 100%, 67%);
+}
+.itwo{
+    background-color: #fffaf4;
+    color: hsl(39, 100%, 56%);
+}
+.ithree{
+    background-color: #f2fdf9;
+    color: hsl(166, 100%, 37%);
+}
+.ifour{
+    background-color: #f4f4ff;
+    color: hsl(234, 85%, 45%);
+}
+.summary span{
+    color: hsl(224, 30%, 27%);
+}
+button{
+    background-color: hsl(228, 45%, 44%);
+    border: none;
+    color: white;
+    width: 100%;
+    border-radius: 30px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+}
